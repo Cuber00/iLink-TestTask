@@ -1,0 +1,84 @@
+.btn {
+	border: none;
+	outline: none;
+	font-family: Gilroy;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: 0.18px;
+	color: var(--main-text);
+	padding: 17px 28px;
+	border-radius: 2px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	transition: background .3s;
+}
+
+.white {
+	background-color: var(--white);
+}
+
+.btn>span {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.btn::before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	transition: left .3s;
+}
+
+.btn.white::before {
+	background: var(--purple);
+	opacity: 0.10000000149011612;
+}
+
+.btn.white:disabled {
+	background: var(--ligth-grey);
+	cursor: default;
+}
+
+.btn.purple {
+	background: var(--purple);
+	color: var(--white);
+}
+
+.btn.purple::before {
+	background: var(--purple-btn-hover);
+}
+
+.btn.purple:disabled {
+	background: var(--grey);
+	cursor: default;
+}
+
+.btn.white:disabled {
+	background: var(--ligth-grey);
+	cursor: default;
+}
+
+@media (hover:hover) {
+	.btn:not(:disabled):hover::before {
+		left: 0;
+	}
+}
+
+@media (hover:none) {
+	.btn.white:active {
+		background-color: var(--white-btn-hover);
+	}
+
+	.btn.white:purple {
+		background-color: var(--purple-hover);
+	}
+}

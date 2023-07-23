@@ -1,0 +1,41 @@
+.title_h1 {
+	font-family: FactorA;
+	font-size: 124px;
+	font-weight: 500;
+	line-height: 148px;
+	letter-spacing: -1.538px;
+}
+
+.title_h2 {
+	font-family: FactorA;
+	font-size: 68px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 88px;
+	letter-spacing: -0.843px;
+}
+
+.title_h3 {
+	font-family: FactorA;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+.title_h4 {
+	font-family: FactorA;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: -0.298px;
+}
+
+.text {
+	font-family: Gilroy;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+}

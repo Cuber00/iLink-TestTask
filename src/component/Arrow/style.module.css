@@ -1,0 +1,27 @@
+.wrapp {
+	padding: 16px;
+	border-radius: 2px;
+	background-color: var(--white);
+	width: fit-content;
+	display: flex;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.wrapp:not(.disabled):hover svg {
+	stroke: var(--purple);
+}
+
+.disabled {
+	cursor: default;
+	background-color: var(--ligth-grey);
+}
+
+.disabled svg {
+	stroke: #ADADAD;
+}
+
+.left {
+	transform: rotate(180deg);
+}

@@ -1,0 +1,12 @@
+.error {
+	color: var(--red);
+	font-family: Gilroy;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 4px;
+}

@@ -1,0 +1,72 @@
+.svg {
+
+	transition: all .3s;
+}
+
+.svg path {
+	stroke: inherit;
+	fill: inherit;
+
+}
+
+.arrow {
+	stroke: #130F26;
+	fill: none;
+}
+
+.error {
+	stroke: #EB5757;
+	fill: none;
+}
+
+.camera {
+	fill: #8A8A8A
+}
+
+.camera:hover {
+	fill: #585CC6
+}
+
+.delete {
+	fill: #EB5757;
+}
+
+.delete path:nth-child(1) {
+	opacity: .4;
+	transition: opacity .3s;
+}
+
+.delete:hover path:nth-child(1) {
+	opacity: 1;
+}
+
+.i_fill {
+	fill: #585CC6
+}
+
+.i_fill:hover {
+	fill: #797DDF
+}
+
+.i_stroke {
+	stroke: #585CC6;
+	fill: none
+}
+
+.i_stroke:hover {
+	stroke: #797DDF;
+}
+
+.load {
+	animation: load 1.6s infinite linear;
+}
+
+@keyframes load {
+	from {
+		transform: rotate(0deg)
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
