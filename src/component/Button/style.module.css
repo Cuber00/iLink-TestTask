@@ -48,6 +48,10 @@
 	cursor: default;
 }
 
+.icon {
+	fill: var(--white)
+}
+
 .btn.purple {
 	background: var(--purple);
 	color: var(--white);

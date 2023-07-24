@@ -1,0 +1,134 @@
+.wrapp {
+	position: absolute;
+	bottom: 104px;
+	right: 40px;
+}
+
+.content {
+	width: 438px;
+	padding: 16px 64px 23px 130px;
+	border-radius: 32px;
+	position: relative;
+	overflow: hidden;
+}
+
+.wrapp:after {
+	content: "";
+	width: 78px;
+	height: 78px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -48px;
+	left: 25px;
+}
+
+.content:after {
+	content: "";
+	width: 92px;
+	height: 87px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: -4px;
+	left: -1px;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.title {
+	margin: 5px 0 12px;
+}
+
+.btn {
+	cursor: pointer;
+	position: absolute;
+	top: 24px;
+	right: 24px;
+}
+
+.error .icon {
+	fill: var(--white);
+}
+
+.error .text {
+	color: var(--white);
+}
+
+.error .content {
+	background-color: #F64B3C;
+}
+
+.error.wrapp:after {
+	background-image: url(../../icon/fail.svg);
+}
+
+.error .content:after {
+	background-image: url(../../icon/Red\ bubbles.svg);
+}
+
+.success .icon {
+	fill: var(--main-text);
+}
+
+.success .text {
+	color: var(--main-text);
+}
+
+.success .content {
+	background-color: #B5FFA2;
+}
+
+.success.wrapp:after {
+	background-image: url(../../icon/success.svg);
+}
+
+.success .content:after {
+	background-image: url(../../icon/green\ bubbles.svg);
+}
+
+@media(max-width: 480px) {
+	.wrapp {
+		bottom: 16px;
+		right: 16px;
+	}
+
+	.content {
+		min-width: 288px;
+		width: auto;
+		padding: 14px 50px 21px 78px;
+	}
+
+	.text {
+		max-width: 168px;
+	}
+
+	.btn {
+		top: 16px;
+		right: 16px;
+	}
+
+	.error.wrapp:after,
+	.success.wrapp:after {
+		width: 64px;
+		height: 64px;
+		top: -34px;
+		left: 10px;
+	}
+
+	.error .content:after,
+	.success .content:after {
+		height: 79px;
+		left: -20px;
+		bottom: 0;
+	}
+
+	.title {
+		margin: 0;
+	}
+
+}

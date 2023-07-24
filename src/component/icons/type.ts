@@ -1,4 +1,4 @@
-export interface IconProps extends React.SVGAttributes<SVGAElement> {
+export interface IconProps extends React.SVGProps<SVGSVGElement> {
 	fill?: string,
 	stroke?: string
 }

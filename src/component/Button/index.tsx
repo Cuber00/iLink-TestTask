@@ -18,7 +18,7 @@ const Button = ({ option = "1", disabled = false, children }: ButtonProps): JSX.
 		})}
 			disabled={disabled}>
 			<span>
-				{option === "3" && <IPlus fill="white" />}
+				{option === "3" && <IPlus className={cl.icon} />}
 				{children}
 			</span>
 		</button>
